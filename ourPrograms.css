@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* box-shadow: 2px 2px 3px #dde1e7; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.sidemenuCont{
+    display: none;
+}
+.logonavs{
+    display: flex;
+    padding: 20px 40px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.logonavs a{
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logonavs  a:hover{
+    color: yellowgreen;
+}
+.as{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    max-width: 100%;
+}
+header .button{
+    padding-right: 20px;
+}
+header .button button{
+    border: 1px solid greenyellow;
+    padding: 15px;
+    background-color: white;
+}
+header .button button:hover{
+    background-color: greenyellow;
+}
+/* header .button button:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-size: 13px;
+} */
+header .button button a{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+    .navs{
+        display: none;
+    }
+    .sidebutton{
+        display: none;
+    }
+    .sidemenuCont{
+        display: block;
+        align-items: center;
+    }
+    .menuiconCont{
+        position: fixed;
+        right: 20px;
+        /* bottom: 20px; */
+        top: 20px;
+        /* top: 30px; */
+    }
+    .menuicon{
+        font-size: 20px;
+    }
+    .menuicon p{
+        margin: 5px;
+        width: 30px;
+        height: 6px;
+        background-color: black;
+        /* margin: 5px; */
+    }
+    .sidemenuCont{
+        cursor: pointer;
+    }
+    .slideMenu{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 74px;
+        overflow: scroll;
+        padding: 0px 30px;
+        height: 70vh;
+        background-color: #fff;
+        transition: linear 0.3s;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .navsSmall{
+        margin-top: 6vh;
+        
+    }
+    .navsSmall ul{
+        list-style-type: none;
+    }
+    .navsSmall ul li{
+        padding: 20px 5px;        
+    }
+    .navsSmall ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        /* padding: 20px 0px; */
+        /* padding: 10px; */
+        
+    }
+    .menuicon2{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+}

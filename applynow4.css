@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: monospace; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.applynow2section {
+    display: block;
+    flex-wrap: wrap;
+}
+.applynow2cont {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+.completesection {
+    grid-column: 1 /2;
+    padding: 40px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+}
+.applynow2cont .image {
+    width: 210px;
+    /* background-color: transparent; */
+}
+ .applynow2cont .image img{
+    max-width: 100%;
+}
+.text {
+    padding-top: 55px;
+    /* border-bottom: 5px solid grey; */
+    /* padding-bottom: 55px; */
+}
+.text1 p{
+    background-color: rgb(244, 254, 252);
+    border: 1px solid rgb(148, 220, 40);
+    /* padding: 10px 12px; */
+    border-radius: 5px;
+    padding-right: 23px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    /* padding-top: 20px; */
+}
+.text2 {
+    padding-top: 15px;
+}
+form span{
+    color: orangered;
+}
+.text2 p i{
+    color: rgb(213, 209, 209);
+    padding-right: 4px;
+}
+.text2 p{
+    font-size: 17px;
+    padding: 14px 0px;
+    font-weight: 600;
+    color: rgb(157, 157, 157);
+}
+.applynow2cont .text2 .p2{
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+.applynow2cont .text2 #greenI{
+    color: green;
+}
+.personal {
+    /* z-index: 1; */
+    /* z-index: 2; */
+    /* background-color: white; */
+    grid-column: 2 / 5;
+}
+.personal header{
+    /* z-index: 2; */
+    width: 100%;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 2px 2px 3px #dde1e7, -2px -2px 3px #dde1e7;
+}
+.applynow2section header .logo{
+   width: 130px;
+   padding-left: 20px;
+}
+.applynow2section header .logo img{
+    max-width: 100%;
+}
+.personal .div2, header a{
+    text-decoration: none;
+    color: black;
+}
+.personal .div1{
+    padding-left: 40px;
+}
+.applynow2section .tellusaboutyourselfcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.applynow2section .tellusaboutyourselfwrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 90%;
+}
+.applynow2section .tellusaboutyourselfheader{
+    /* padding: 16px 0px; */
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.applynow2section .tellusaboutyourselfheader .p1{
+    font-weight: 600;
+}
+.applynow2section .tellusaboutyourselfheader .p4{
+    color: rgb(57, 178, 57);
+    /* padding-right: 60px; */
+}
+.applynow2section .tellusaboutyourselfheader{
+    /* padding: 35px 55px; */
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+}
+.applynow2section .tellusaboutyourselfheader .p1{
+    /* font-size: 20px; */
+    
+    font-weight: 700;
+    font-size: 23px;
+    padding-bottom: 40px;
+}
+.applynowsmallCont{
+    display: none;
+}
+.buttonNext button{
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient( to left,rgb(57, 178, 57),rgb(175, 191, 33));
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttonNext button a{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.buttonNext{
+    padding-top: 35px;
+}
+.videotextwrapper{
+    padding: 30px 60px;
+    width: 100%;
+}
+.readmore{
+    display: none;
+}
+
+/* .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    padding: 10px; */
+    /* padding: 10px; */
+/* } */
+iframe{
+    width: 79%;
+    height: 75vh;
+    padding: 32px;
+    border-radius: 15px;
+    background-color: #f2f3f5;
+}
+.videotextwrapper .text {
+    margin-top: 35px;
+    /* margin: 35px 0px; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 1px solid black;
+    width: 80%;
+}
+.videotextwrapper .text h1{
+    padding: 0px;
+    font-size: 24px;
+}
+.videotextwrapper .text .p1{
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.videotextwrapper .text button, .videotextwrapper .text button{
+    width: 100px;
+    padding-top: 34px;
+    /* justify-content: flex-start; */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* padding: 0px; */
+}
+.readmoreBtn, .readlessBtn{
+    cursor: pointer;
+}
+.videotextwrapper .text button {
+    color: green;
+    text-decoration: none;
+}
+.videotextwrapper .p4{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.videotextwrapper .p3{
+    padding: 10px 0px;
+}
+.readmore1{
+    display: none;
+}
+@media screen and (max-width: 1199px) {
+    .applynow2section{
+        display: none;
+    }
+    .applynowsmallCont{
+        display: block;
+        /* padding: 20px; */
+    }
+    .applynowsmallCont header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        background-color: white;
+        box-shadow: 2px 2px 3px #dde1e7,  -2px -5px 3px #dde1e7;
+    }
+    .applynowsmallCont header .logo{
+        width: 130px;
+    }
+    .applynowsmallCont header .navs{
+        display: flex;
+        
+    }
+    .applynowsmallCont header .navs p{
+        padding-right: 10px;
+    }
+    .applynowsmallCont header .logo img{
+        max-width: 100%;
+    }
+    
+    .applynowsmallCont .textContainer{
+        padding: 25px;
+    }
+    .applynowsmallCont .textContainer .p2{
+        padding: 15px 0px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .applynowsmallCont .textContainer .text1 .p1{
+        font-size: 14.7px;
+        font-weight: 600;
+        color: rgb(171, 171, 171);
+    }
+    .applynowsmallCont .textContainer .p1 i{
+        color: green;
+        padding-right: 7px;
+    }
+
+    .applynowsmallCont .textContainer p{
+        padding: 10px 0px; 
+    }
+    .buttonNext button{
+        width: 100%;
+    }
+    .ptops{
+        font-size: 14.5px;
+        padding-top: 20px;
+    }
+    .textContainer .text1 p{
+        padding: 10px;
+    }
+    .applynowsmallCont .textContainer .p1{
+        /* padding: 20px 0px; */
+        padding-top: 20px;
+        
+        font-weight: 600;
+    }
+    .applynowsmallCont .p5{
+        color: rgb(177, 174, 174);
+    }
+    .applynowsmallCont .tellusaboutyourselfheader{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    .applynowsmallCont .tellusaboutyourselfheader .p1{
+        font-weight: 600;
+        color: black;
+    }
+    .applynowsmallCont .tellusaboutyourselfheader .p4{
+        padding-top: 15px;
+        color: rgb(150, 211, 60);
+    } 
+    .videotextwrapper .video iframe{
+        padding: 15px;
+        margin-top: 30px;
+        height: 45vh;
+        width: 100%;
+    }
+    .videotextwrapper .text{
+        width: 100%;
+        /* height: 100vh; */
+    }
+    .videotextwrapper{
+        padding: 0;
+    }
+    .videotextwrapper .p4{
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+    /* .videotextwrapper .p4{ */
+        /* font-size: 20px; */
+    /* } */
+}

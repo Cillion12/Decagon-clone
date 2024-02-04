@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.applynow2section {
+    display: block;
+    flex-wrap: wrap;
+}
+.applynow2cont {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+.completesection {
+    grid-column: 1 /2;
+    padding: 40px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+}
+.applynow2cont .image {
+    width: 210px;
+    /* background-color: transparent; */
+}
+ .applynow2cont .image img{
+    max-width: 100%;
+}
+.text {
+    padding-top: 55px;
+    /* border-bottom: 5px solid grey; */
+    /* padding-bottom: 55px; */
+}
+.text1 p{
+    background-color: rgb(244, 254, 252);
+    border: 1px solid rgb(148, 220, 40);
+    /* padding: 10px 12px; */
+    border-radius: 5px;
+    padding-right: 23px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    /* padding-top: 20px; */
+}
+.text2 {
+    padding-top: 15px;
+}
+.text2 p i{
+    color: rgb(213, 209, 209);
+    padding-right: 4px;
+}
+.text2 p{
+    font-size: 17px;
+    padding: 14px 0px;
+    font-weight: 600;
+    color: rgb(157, 157, 157);
+}
+.applynow2cont.text2 .p2{
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+.personal {
+    grid-column: 2 / 5;
+}
+.personal header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 2px 2px 3px #dde1e7, -2px -2px 3px #dde1e7;
+}
+.personal .div2, header a{
+    text-decoration: none;
+    color: black;
+}
+.personal .div1{
+    padding-left: 40px;
+}
+.personal .div2{
+    /* padding-right: ; */
+} 
+.whattdecadevsaresayingCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.whatdecadevsaresayingWrap{
+    display: flex;
+    width: 85%;
+    /* height: 30vh; */
+    border-radius: 20px;
+    /* justify-content: ; */
+}
+.applynow2section .textcont{
+    padding: 10px;
+    border-radius: 40px 0px 0px 40px;
+    background-image: url(images/css\ background2.jpg);
+    background-blend-mode: multiply;
+    background-color: grey;
+    background-position: center;
+    background-attachment: fixed;
+    width: 55%;
+    padding-top: 30px;
+    color: white;
+}
+.applynow2section .textcont h1{
+    font-size: 22px;
+    padding-left: 10px;
+}
+.applynow2section .textcont p{
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.applynow2cont .imagetext{
+    height: 100%;
+    background-color: #0fa40f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0px 40px 40px 0px;
+    padding: 10px 0px;
+    width: 45%;
+}
+.applynow2cont .imagetext .text{
+    width: 50%;
+    padding-bottom: 13px;
+    color: white;
+    /* height: 50%; */
+    /* padding-bottom: 60px; */
+}
+.imagetext .image{
+    /* height: 50%; */
+    padding-top: 12px;
+    width: 70px;
+    height: 70px;
+}
+.applynow2cont .imagetext .image img{   
+    border-radius: 50%;
+    max-width: 100%;
+}
+.applynow2section .tellusaboutyourselfcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.applynow2section .tellusaboutyourselfwrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+}
+.applynow2section .tellusaboutyourselfheader{
+    display: flex;
+    justify-content: space-between;
+}
+.applynow2section .tellusaboutyourselfheader .p4{
+    color: rgb(57, 178, 57);
+    /* padding-right: 60px; */
+}
+.applynow2section .form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ .applynow2section .formcont1,.applynow2section .formCont2,.applynow2section .formCont3,.applynow2section .formCont4{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.applynow2section .formcont1 p{
+    display: flex;
+}
+.applynow2section .formCont3{
+    display: flex;
+    /* flex-direction: column; */
+}
+.applynow2section label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.applynow2section label span{
+    color: orangered;
+}
+.applynow2section label .input1 input,.applynow2section .input2  p{
+    margin-left: 30px;
+}
+.input{
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 0.2px solid rgb(185, 184, 184);
+    height: 41px;
+    padding: 7px;
+    width: 320px;
+}
+.applynow2section label p{
+    margin-bottom: 10px;
+}
+.applynow2section .form .p2{
+    font-weight: 600;
+}
+.form .p2, .form .p1{
+    padding: 4px 0px;
+}
+.applynow2section label .payment{
+    font-size: 14px;
+}
+.applynow2section .input1{
+    margin-left: 30px;
+}
+::placeholder{
+    font-size: 15px;
+}
+ select {
+    line-height: 20px;
+    font-size: 16px;
+    color: grey;
+}
+a{
+    text-decoration: none;
+}
+/* select:hover{
+    background-color: greenyellow;
+    color: white;
+} */
+label select option{
+    padding: 100px;
+}
+.lastsection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lastsection button{
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient( to left,rgb(57, 178, 57),rgb(175, 191, 33));
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.lastsection button a{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.lastsection .button{
+    padding-top: 20px;
+}
+p span{
+    color: orangered;
+}
+.lastsection span{
+    color: orange;
+}
+.lastsection {
+    font-size: 15px;
+    padding-top: 12px;
+}
+.lastsection li{
+    padding: 8px 0px;
+}
+.applynowsmallCont{
+    display: none;
+}
+.lastsection .p2{
+    display: none;
+}
+.applynow2section .tellusaboutyourselfheader .p4{
+    padding: 5px 0px;
+    color: grey;
+}
+@media screen and (max-width: 1199px) {
+    /* .input{
+        width: 100%;
+    } */
+    .applynow2section{
+        display: none;
+    }
+    .applynowsmallCont{
+        display: block;
+        /* padding: 20px; */
+    }
+    .applynowsmallCont header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        background-color: white;
+        box-shadow: 2px 2px 3px #dde1e7,  -2px -5px 3px #dde1e7;
+    }
+    .applynowsmallCont header .logo{
+        width: 130px;
+    }
+    .applynowsmallCont header .navs{
+        display: flex;
+        
+    }
+    .applynowsmallCont header .navs p{
+        padding-right: 10px;
+    }
+    .applynowsmallCont header .logo img{
+        max-width: 100%;
+    }
+    .applynowsmallCont .tellusaboutyourselfwrapper{
+        display: block;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        flex-direction: column;
+    }
+    .applynowsmallCont .tellusaboutyourselfheader{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .applynowsmallCont .tellusaboutyourselfheader .p1{
+        padding-top: 15px;
+    }
+     .applynowsmallCont .input{
+        width: 100%;
+    }
+    .applynowsmallCont .form1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .applynowsmallCont .textContainer{
+        padding: 30px;
+    }
+    .applynowsmallCont .openingtext{
+        padding-top: 35px;
+        width: 100%;
+        display: block;
+    }
+    .applynowsmallCont .textcont{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .applynowsmallCont .textcont h1{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .applynowsmallCont .textcont p{
+        font-size: 12px;
+    }
+    .applynowsmallCont .imagetext{
+        border-radius: 0px;
+        width: 100%;
+    }
+    .applynowsmallCont .textContainer .p2{
+        padding: 15px 0px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .applynowsmallCont .textContainer .text1 .p1{
+        font-size: 14.7px;
+        font-weight: 600;
+        color: rgb(171, 171, 171);
+    }
+    .applynowsmallCont .textContainer .p1 i{
+        color: green;
+        padding-right: 7px;
+    }
+    .applynowsmallCont .input{
+        margin-top: 10px;
+        height: 45px;
+    }
+    .applynowsmallCont .lastsection button{
+        width: 100%;
+    }
+    .applynowsmallCont .p1, .applynowsmallCont li{
+        font-size: 15px;
+    }
+    .lastsection .p2{
+        display: block;
+        font-size: 14px;
+    }
+    .applynowsmallCont .openingtext{
+        height: 65vh;
+    }
+    .applynowsmallCont .openingtext .textcont h1{
+        font-size: 16px;
+    }
+    .applynowsmallCont .openingtext .textcont p{
+        /* background-image: url(images/css\ background.jpg); */
+        padding-top: 13px;
+        font-size: 14px;
+    }
+    .applynowsmallCont .openingtext .imagetext{
+        /* width: 40%; */
+        background-color: rgba(0, 128, 0, 0.708);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* height: 40%; */
+    }
+    .applynowsmallCont .openingtext .imagetext .image{
+        width: 75px;
+        padding-top: 20px;
+        height: 75px;
+    }
+    .applynowsmallCont .openingtext .imagetext .text{
+        padding-bottom: 15px;
+    }
+    .applynowsmallCont .openingtext .imagetext img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    .applynowsmallCont .openingtext .imagetext .text{
+        text-align: center;
+        color: white;
+    }
+    .applynowsmallCont .openingtext .imagetext .text h1{
+        text-align: center;
+    }
+    .applynowsmallCont .textcont{
+        background-image: url(images/css\ background2.jpg);
+        background-blend-mode: multiply;
+        background-color: rgb(46, 45, 50);
+        background-position: center;
+        padding: 27px;
+        background-attachment: fixed;
+        width: 100%;
+        padding-top: 30px;
+        color: white;
+    }
+    .applynowsmallCont .lastsection .p3{
+        font-size: 13px;
+        color: rgb(150, 87, 42);
+        padding: 12px;
+        background-color: rgba(253, 240, 212, 0.353);
+    }
+    
+}

@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --color: rgb(57, 178, 57);
+    --color2: rgb(13, 165, 13);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* box-shadow: 2px 2px 3px #dde1e7; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.logonavs{
+    display: flex;
+    padding: 20px 40px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.logonavs a{
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logonavs  a:hover{
+    color: yellowgreen;
+}
+.as{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    max-width: 100%;
+}
+header .button{
+    padding-right: 20px;
+}
+header .button button{
+    border: 1px solid greenyellow;
+    padding: 15px;
+    background-color: white;
+}
+header .button button:hover{
+    background-color: greenyellow;
+}
+/* header .button button:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-size: 13px;
+} */
+header .button button a{
+    color: black;
+    text-decoration: none;
+}
+.slidemenucontainer{
+    display: none;
+}
+.sidemenucontainer{
+    display: none;
+}
+.sidemenucontainer .button button{
+    display: none;
+}
+.container{
+    display: none;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+/* /
+.slick-dots li button{
+    background-color: blue;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 0px;
+} */
+.whatsappLink{
+    position: fixed;
+    bottom: 30px;
+    right: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 3px #dde1e7, -2px -2px 3px #dde1e7;
+    z-index: 1;
+}
+.whatsappLink i{
+    font-size: 30px;
+    color: rgb(14, 226, 113);
+}
+.whatsappLink:hover{
+    background-color: rgb(14, 226, 113);
+    color: white;
+}
+.whatsappLink i:hover{
+    color: white;
+}
+.communitycont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dde1e7;
+}
+.communitywrap{
+    width: 90%;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.communityboxes1{
+    border-radius: 10px;
+    margin: 0px 14px;
+    width: 350px;
+    height: 450px;
+    padding: 18px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    margin-left: 80px;
+    margin-top: 40px;
+    grid-column: 1 / 1;
+}
+.communityboxes1 a{
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin-left: 30px;
+}
+.communityboxes1 a:hover{
+    color: blue;
+}
+.communityboxes1 p{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 10px 0px;
+}
+.communityboxes2 li{
+    padding: 20px 0px;
+    font-size: 16.2px;
+}
+.communityboxes2 h1{
+    font-weight: 500;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.communityboxes2{
+    grid-column: 2 / 4;
+}
+.communityboxes2 .box{
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 26px 40px;
+}
+.communityboxes2 .box p{
+    padding: 20px 0px;
+    font-size: 16.2px;
+    /* color: grey; */
+}
+.communityboxes2  .span2{
+    color: blue;
+    font-weight: 500;
+}
+.communityboxes2 .span1{
+    font-weight: 600;
+}
+.sidemenuCont{
+    display: none;
+}
+@media screen and (max-width:1199px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .button button{
+        display: none;
+    }
+    .navs{
+        display: none;
+    }
+    .sidemenu p{
+        margin: 5px;
+        width: 30px;
+        height: 6px;
+        background-color: black;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidemenucontainer{
+        position: relative;
+        display: block;
+    }
+    .sidemenu{
+        right: 20px;
+    }
+    .communityboxes1{
+        display: none;
+    }
+    .communityboxes2{
+        grid-column: 4 / 4;
+    }
+    .container{
+        position: fixed;
+        display: block;
+    }
+    .slides{
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        height: 100%;
+    }
+    .slides p{
+        color: blue;
+    }
+    .slides p a{
+        text-decoration: none;
+        color: blue;
+    }
+    .slick-prev, .slick-next{
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        /* bottom: 20px; */
+        background-color: transparent;
+        font-size: 17px;
+        color: white;
+        background-color: rgb(79, 221, 79);
+        /* padding: 10px; */
+        border-radius: 50%;
+        width: 22px;
+        padding: 2px;
+        border: none;
+
+        /* color: aliceblue; */
+    }
+    .slick-prev{
+        left: 20px;
+        z-index: 1;
+        /* background-color: transparent; */
+    }
+    .slick-next{
+        z-index: 1;
+        right: 20px;
+    }
+    .as{
+        display: block;
+    }
+    .navs{
+        display: none;
+    }
+    .sidebutton{
+        display: none;
+    }
+    .sidemenuCont{
+        display: block;
+        align-items: center;
+    }
+    .menuiconCont{
+        position: fixed;
+        right: 20px;
+        /* bottom: 20px; */
+        top: 20px;
+        /* top: 30px; */
+    }
+    .menuicon{
+        font-size: 20px;
+    }
+    .menuicon p{
+        margin: 5px;
+        width: 30px;
+        height: 6px;
+        background-color: black;
+        /* margin: 5px; */
+    }
+    .sidemenuCont{
+        cursor: pointer;
+    }
+    .slideMenu{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 74px;
+        overflow: scroll;
+        padding: 0px 30px;
+        height: 70vh;
+        background-color: #fff;
+        transition: linear 0.3s;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .navsSmall{
+        margin-top: 6vh;
+        
+    }
+    .navsSmall ul{
+        list-style-type: none;
+    }
+    .navsSmall ul li{
+        padding: 20px 5px;        
+    }
+    .navsSmall ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        /* padding: 20px 0px; */
+        /* padding: 10px; */
+        
+    }
+    .menuicon2{
+        display: none;
+    }
+}
